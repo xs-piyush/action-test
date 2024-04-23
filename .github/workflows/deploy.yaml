@@ -8,7 +8,7 @@ jobs:
     build_and_deploy:
       runs-on: ubuntu-latest
       steps:
-
+        - name: Checkout repo
+          uses: actions/checkout@v3
         - name: Display contents of hello.txt
-          run: echo "Hello Piyush"
           run: cat hello.txt
