@@ -16,3 +16,7 @@ jobs:
           env:
             ENV_TEST: ${{ vars.ENV_TEST }}
           run: echo ${{ vars.ENV_TEST }}
+        - name: Secret check
+          env:
+            SECRET_ENV: ${{ secrets.SECRET_ENV }}
+          run: echo $ENV_TEST 
